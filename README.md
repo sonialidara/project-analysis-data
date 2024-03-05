@@ -1,8 +1,6 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 # Proyek_Analisis_Data
 =======
-<<<<<<< HEAD
 # Proyek_Analisis_Data
 =======
 # Streamlit Dashboard ✨
@@ -35,8 +33,5 @@ terdapat panah ' > ' di pojok kiri layar. apabila di klik, akan menampilkan pane
 panel side bar kiri, terdapat profil dan opsi singkat untuk menampilkan isi
 Dataset, dan Summery statics.
 apabila tidak dicentang, hanya menampilkan isi dashboard sederhana.
->>>>>>> eda02e0 (add all my files)
->>>>>>> 1c878f3 (Add all my files)
 =======
 # project-analysis-data
->>>>>>> e6ac5365f5a09dc564da08b82d6323a2d7858e82
