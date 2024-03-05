@@ -34,7 +34,7 @@ st.sidebar.markdown("**• SONIA LIDARA**")
 st.sidebar.markdown(
     "**• Email: [sonialidara@gmail.com](sonialidara@gmail.com)**")
 st.sidebar.markdown(
-    "**• ID Dicoding: [deemas_dee](https://www.dicoding.com/users/sonialidara02/)**")
+    "**• ID Dicoding: [sonialidara02](https://www.dicoding.com/users/sonialidara02/)**")
 
 
 st.sidebar.title("Dataset Bike Share")
@@ -75,7 +75,7 @@ with col1:
 
     season_count = data.groupby("season_label")["cnt"].sum().reset_index()
     fig_season_count = px.bar(season_count, x="season_label",
-    y="total_count", title="Jumlah Penyewa berdasarkan Musim")
+    y="cnt", title="Jumlah Penyewa berdasarkan Musim")
     y="cnt", title="Season-wise Bike Share Count")
     st.plotly_chart(fig_season_count, use_container_width=True,
     height=400, width=600)
@@ -85,9 +85,9 @@ with col2:
     # st.subheader("Weather Situation-wise Bike Share Count")
 
 
-    weather_count = data.groupby("weather_condition")["total_count"].sum().reset_index()
-    fig_weather_count = px.bar(weather_count, x="weather_condition",
-                               y="total_count", title="Jumlah Penyewa berdasar Cuaca")
+    weather_count = data.groupby("weathersit")["cnt"].sum().reset_index()
+    fig_weather_count = px.bar(weather_count, x="weathersit",
+                               y="cnt", title="Jumlah Penyewa berdasar Cuaca")
 
     weather_count = data.groupby("weathersit")["cnt"].sum().reset_index()
     fig_weather_count = px.bar(weather_count, x="weathersit",
