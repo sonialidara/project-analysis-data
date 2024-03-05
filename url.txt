@@ -1,2 +1,2 @@
-dashboard streamlit : 
+dashboard streamlit : https://project-analysis-data-fv8dfjywahpayqxaz924j5.streamlit.app/
 
