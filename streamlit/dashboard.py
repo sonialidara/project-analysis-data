@@ -13,7 +13,7 @@ import plotly.graph_objects as go
 
 # LOAD DATA
 
-=======
+
 @st.cache_resource
 def load_data():
     data = pd.read_csv("./dataset/hour.csv")
@@ -59,7 +59,7 @@ st.sidebar.markdown('4: Hujan Lebat + Palet Es + Badai Petir + Kabut, Salju + Ka
 
 
 
-=======
+
 # VISUALIZATION
 
 # create a layout with two columns
@@ -77,7 +77,7 @@ with col1:
     fig_season_count = px.bar(season_count, x="season_label",
 
                               y="total_count", title="Jumlah Penyewa berdasarkan Musim")
-=======
+
                               y="cnt", title="Season-wise Bike Share Count")
     st.plotly_chart(fig_season_count, use_container_width=True,
                     height=400, width=600)
@@ -90,7 +90,7 @@ with col2:
     weather_count = data.groupby("weather_condition")["total_count"].sum().reset_index()
     fig_weather_count = px.bar(weather_count, x="weather_condition",
                                y="total_count", title="Jumlah Penyewa berdasar Cuaca")
-=======
+
     weather_count = data.groupby("weathersit")["cnt"].sum().reset_index()
     fig_weather_count = px.bar(weather_count, x="weathersit",
                                y="cnt", title="Weather Situation-wise Bike Share Count")
