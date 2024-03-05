@@ -75,7 +75,6 @@ with col1:
 
     season_count = data.groupby("season_label")["cnt"].sum().reset_index()
     fig_season_count = px.bar(season_count, x="season_label",
-
     y="total_count", title="Jumlah Penyewa berdasarkan Musim")
     y="cnt", title="Season-wise Bike Share Count")
     st.plotly_chart(fig_season_count, use_container_width=True,
